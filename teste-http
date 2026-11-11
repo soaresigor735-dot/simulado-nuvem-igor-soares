@@ -1,0 +1,2 @@
+\$ kubectl -n simulado-nuvem exec cliente -- wget -qO- http://web
+<h1>Simulado Cloud - Versao 1</h1>
