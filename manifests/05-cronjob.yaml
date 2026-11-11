@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: verifica-web
+  namespace: simulado-nuvem
+spec:
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: checker
+            image: busybox:1.36
+            command: ["wget", "-qO-", "http://web"]
+          restartPolicy: OnFailure
