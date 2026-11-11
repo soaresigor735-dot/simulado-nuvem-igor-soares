@@ -1,0 +1,4 @@
+\$ kubectl auth can-i list pods -n simulado-nuvem --as=system:serviceaccount:simulado-nuvem:leitor-web
+yes
+\$ kubectl auth can-i delete pods -n simulado-nuvem --as=system:serviceaccount:simulado-nuvem:leitor-web
+no
