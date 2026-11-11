@@ -1,0 +1,10 @@
+\$ kubectl -n simulado-nuvem get deployment,pods,service
+NAME              READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/web   2/2     2/2          2/2         2m
+
+NAME                       READY   STATUS    RESTARTS   AGE
+pod/web-79d85bc976-abcde   1/1     Running   0          2m
+pod/web-79d85bc976-fghij   1/1     Running   0          2m
+
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+service/web  ClusterIP   10.96.120.45    <none>        80/TCP    2m
