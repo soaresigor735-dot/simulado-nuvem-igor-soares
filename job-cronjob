@@ -1,0 +1,2 @@
+\$ kubectl -n simulado-nuvem logs job/teste-web
+<h1>Simulado Cloud - Versao 2</h1>
